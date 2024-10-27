@@ -1,0 +1,517 @@
+*,
+
+::after,
+
+::before {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 0.5fr;
+  grid-template-rows: 1fr 3.5fr 1fr;
+  gap: 0px 3px;
+  background-image:  linear-gradient(to right, rgb(19, 14, 14), rgb(187, 168, 168));
+  background-image: url("Images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-template-areas:
+    "header header header"
+    "sidebar main rightside"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  /* single image */
+ background-image:  linear-gradient(to right, rgb(19, 14, 14), rgb(187, 168, 168));
+  background-image: url("Images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Noto Serif", system-ui;
+  font-weight: lighter;
+  font-style: normal;
+  font-variation-settings: 'wdth'100;
+  font-variation-settings: 'wght'50;
+  font-size: large;
+  inline-size: fit-content;
+  min-block-size: 100vh;
+  display: inline-flex;
+  place-content: center;
+  place-items: flex-start left;
+}
+
+.topintro h1 {
+  grid-area: header;
+  font-size: larger;
+
+  font-weight: 400;
+  padding-inline-end: 1em;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+ 
+  text-align: start;
+
+  margin: auto;
+
+  text-shadow: 1px 1px 1px #957dad,
+
+    1px 2px 1px #957dad,
+
+    1px 3px 1px #957dad,
+
+    1px 4px 1px #957dad,
+
+    1px 5px 1px #957dad,
+
+    1px 6px 1px #957dad,
+
+    1px 10px 5px rgba(16, 16, 16, 0.5),
+
+    1px 15px 10px rgba(16, 16, 16, 0.4),
+
+    1px 20px 30px rgba(16, 16, 16, 0.3),
+
+    1px 25px 50px rgba(16, 16, 16, 0.2);
+
+  font-family: Noto, serif;
+}
+
+.logo {
+  grid-area: header;
+  float: inline-start;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  z-index: 1;
+  color: rgb(58, 166, 216);
+  padding: 20px;
+}
+
+.main {
+  grid-area: main;
+  /* single image */
+ background-image:  linear-gradient(to right, rgb(19, 14, 14), rgb(187, 168, 168));
+  background-image: url("Images/background1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "Noto Serif", system-ui;
+  font-weight: lighter;
+  font-style: normal;
+  font-variation-settings: 'wdth'100;
+  font-variation-settings: 'wght'60;
+  font-size: 10vw;
+  inline-size: auto;
+  writing-mode: horizontal-tb;
+  min-block-size: 20px;
+  display: flow-root;
+  place-content: center start;
+  place-items: flex-start left;
+}
+
+.footer {
+  grid-area: footer;
+  background-image:  linear-gradient(to right, rgb(19, 14, 14), rgb(187, 168, 168));
+  background-image: url("Images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: 40px;
+  display: block;
+  place-content: start;
+  place-items: flex-start left;
+  font-size: 1em
+}
+
+.astrodividermask:after {
+  content: "";
+  display: block;
+  margin: 5% 0;
+  inline-size: 100%;
+  block-size: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px #049372
+}
+
+.astrodivider span {
+  inline-size: 50px;
+  block-size: 50px;
+  position: absolute;
+  inset-block-end: 100%;
+  margin-block-end: -25px;
+  inset-inline-start: 50%;
+  margin-inline-start: -25px;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px #4fb39c;
+  background: #fff
+}
+
+.astrodivider i {
+  position: absolute;
+  inset-block-start: 4px;
+  inset-block-end: 4px;
+  inset-inline-start: 4px;
+  inset-inline-end: 4px;
+  border-radius: 100%;
+  border: 1px dashed #68beaa;
+  text-align: center;
+  line-height: 40px;
+  font-style: normal;
+  color: #049372
+}
+
+.purple .astrodividermask:after {
+  box-shadow: 0 0 8px #886fac
+}
+
+.astrodivider.purple span {
+  box-shadow: 0 2px 4px #ab9ac4
+}
+
+.astrodivider.purple i {
+  border: 1px dashed #b7a8cd;
+  color: #886fac
+}
+
+.neonpurple .astrodividermask:after {
+  box-shadow: 0 0 8px #9d00ff
+}
+
+.astrodivider.neonpurple span {
+  box-shadow: 0 2px 4px #ba4cff
+}
+
+.astrodivider.neonpurple i {
+  border: 1px dashed #c466ff;
+  color: #9d00ff
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-image: linear-gradient(90deg, rgb(28, 26, 73) 0%, rgba(84, 9, 121, 1) 44%, rgba(0, 212, 255, 1) 100%);
+  background-repeat: no-repeat;
+  block-size: 300px;
+  inline-size: 100%;
+  position: relative;
+  inset-block-start: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  inline-size: 100%;
+  block-size: 100%;
+  display: -webkit-inline-box;
+}
+
+.sidebar p,
+ul {
+  margin-block-start: 5%;
+  font-size: 1.8em;
+  list-style-type: none;
+  list-style-position: outside;
+
+  background-color: #d4ebf2;
+  text-align: start;
+  display: -webkit-inline-box;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+li a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.rightside {
+  grid-area: rightside;
+  background-image:  linear-gradient(to right, rgb(19, 14, 14), rgb(187, 168, 168));
+  background-repeat: no-repeat;
+  block-size: 300px;
+  inline-size: 100%;
+  position: relative;
+  inset-block-start: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  inline-size: 100%;
+  block-size: 100%;
+  display: -webkit-inline-box;
+}
+.contactbox {
+  grid-area: main;
+ background-image:  linear-gradient(to right, rgb(19, 14, 14), rgb(187, 168, 168));
+  font-family: "Noto Serif", system-ui;
+  font-weight: lighter;
+  font-style: normal;
+  font-variation-settings: "wdth"100;
+  font-size: 48px;
+  -webkit-fill-available: 100%;
+  inline-size: fit-content;
+  min-block-size: 100vh;
+  display: inline-flex;
+  place-content: center start;
+  place-items: flex-start left;
+}
+
+.contactbox h4 {
+
+  font-size: 70px;
+
+  font-weight: 600;
+  -webkit-text-size-adjust: inherit;
+  text-size-adjust: 15%;
+
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: start;
+
+  margin: auto;
+
+  text-shadow: 1px 1px 1px #957dad,
+
+    1px 2px 1px #957dad,
+
+    1px 3px 1px #957dad,
+
+    1px 4px 1px #957dad,
+
+    1px 5px 1px #957dad,
+
+    1px 6px 1px #957dad,
+
+    1px 10px 5px rgba(16, 16, 16, 0.5),
+
+    1px 15px 10px rgba(16, 16, 16, 0.4),
+
+    1px 20px 30px rgba(16, 16, 16, 0.3),
+
+    1px 25px 50px rgba(16, 16, 16, 0.2);
+
+  font-family: Noto, serif;
+}
+.contactbox p {
+  grid-area: main;
+  display: block;
+  max-inline-size: 400px;
+  writing-mode: horizontal-tb;
+
+  margin: 5% 0;font-size: 60px;
+
+  font-weight: 500;
+  -webkit-text-size-adjust: inherit;
+  text-size-adjust: 15%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Noto, serif;
+  text-align: end;
+
+  margin: auto;
+
+  text-shadow: 1px 1px 1px #957dad,
+
+    1px 2px 1px #957dad,
+
+    1px 3px 1px #957dad,
+
+    1px 4px 1px #957dad,
+
+    1px 5px 1px #957dad,
+
+    1px 6px 1px #957dad,
+
+    1px 10px 5px rgba(16, 16, 16, 0.5),
+
+    1px 15px 10px rgba(16, 16, 16, 0.4),
+
+    1px 20px 30px rgba(16, 16, 16, 0.3),
+
+    1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+
+ .form {
+  grid-area: main;
+  display: inline-block;
+  -webkit-text-size-adjust: inherit;
+  text-size-adjust: 20%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+     appearance: none;
+     font-family: "Noto Serif", system-ui;
+     text-align: -webkit-match-parent;
+  text-align: match-parent;
+  font-size: 20px;
+  font-style: normal;
+  color:#5c07e4;
+  max-inline-size: 400px;
+  writing-mode: horizontal-tb;
+  margin: 5% 0;
+
+}
+
+.input {
+  font-family: "Noto Serif", system-ui;
+  -webkit-text-size-adjust: inherit;
+  text-size-adjust: 15%;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth"100;
+  font-size: 18px;
+  inline-size: 50%;
+
+  padding: 8px;
+
+  margin-block-end: 20px;
+
+  box-sizing: border-box;
+
+}
+.subbutton {
+  grid-area: main;
+
+  inline-size: 150px;
+
+  block-size: 50px;
+
+  border-radius: 180px;
+
+  position: relative;
+
+  inset-inline-start: 40%;
+
+  inset-block-start: 40%;
+
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+
+  cursor: pointer;
+
+  line-height: 12px
+}
+
+.subbutton:before {
+  grid-area: main;
+
+  content: '';
+
+  z-index: 1;
+
+  position: absolute;
+
+  display: block;
+
+  inline-size: 80%;
+
+  block-size: 70%;
+
+  inset-block-start: 15%;
+
+  inset-inline-start: 10%;
+
+  transition: .3s opacity ease-in-out;
+
+  filter: blur(15px);
+
+  opacity: 0;
+
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+
+}
+
+.subbutton:hover:before {
+  grid-area: main;
+
+  opacity: 1;
+  transition: .3s opacity ease-in-out;
+  filter: blur(25px);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+
+}
+.subbutton:after {
+  grid-area: main;
+  content: 'Submit';
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: rgba(235, 235, 235, 1);
+  font-weight: bold;
+  z-index: 5;
+  display: block;
+  border-radius: 180px;
+  inline-size: 92%;
+  block-size: 80%;
+  inset-block-start: 10%;
+  inset-inline-start: 4%;
+  background-color: #131416;
+}
+
+
+
+.wrapper {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "header header header"
+    "sidebar main rightside"
+    "sidebar main rightside"
+    "sidebar main rightside"
+    "sidebar main rightside"
+    "footer footer footer";
+}
+
+@media only screen and (min-inline-size: 250px) {
+  .wrapper {
+
+    grid-template-columns: 10% auto;
+    grid-template-areas:
+      "header header header"
+      "sidebar main rightside"
+      "sidebar main rightside"
+      "sidebar main rightside"
+      "sidebar main rightside"
+      "footer footer footer";
+  }
+
+  @media only screen and (min-inline-size: 300px) {
+    .wrapper {
+      grid-gap: 20px;
+      grid-template-columns: 100px auto 100px;
+      grid-template-areas:
+        "header  header  header"
+        "sidebar main rightside"
+        "footer  footer  footer";
+      max-inline-size: 300px;
+    }
+  }
+}
+.videobox {
+  grid-area: rightside;
+  max-inline-size: 20em;
+  max-block-size: 30.875rem;
+  block-size: 100%;
+  margin: 1.25rem auto;
+  padding: 1.051%;
+  background-color: rgb(102, 102, 102);
+  display: inline-block;
+  inset-inline-start: 25%;
+  position: static;
+  inset-block-start: 25%;
+}
+
+.astrodividermask:after {
+
+  content: "";
+  display: block;
+  margin: -25px auto 0;
+  inline-size: 100%;
+  block-size: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px #049372
+}
