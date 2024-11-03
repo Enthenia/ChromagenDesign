@@ -1,4 +1,4 @@
-<!--!Doctype html>
+<!Doctype html>
 
 <html lang="en-US">
 
@@ -11,37 +11,36 @@
     <title>Chromagen| Invitation</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Mobile Metas -->
+	<!-- Mobile Metas -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Site Metas -->
+	<!-- Site Metas -->
 
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 
-    <meta name="author" content="Chromagen Design">
+	<meta name="author" content="Chromagen Design">
 
-    <meta name="keywords" content="art, design, traditional media">
-
-    <link rel="shortcut icon" type="image/jpg" href="/media/images/ChromagenLogo.PNG">
-    <link rel="stylesheet" href="/CSS/contact.css">
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	<script type="text/javascript" src="/js/invitation.js"defer></script>
+	<meta name="keywords" content="art, design, traditional media">
+	
+	<link rel="shortcut icon" type="image/jpg" href="./Images/ChromagenLogo.PNG">
+<link rel="stylesheet" href="./contact.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <div class="top">
-            <a class="logo" href="index.html"><img src="media/Images/ChromagenLogo.PNG" alt="Chromagen Logo">ChromagenHelps<span class="dotcom">.org</span></a>
-        </div>
-        <!-- Navigation section -->
-    <nav id="navigation">
+<!-- header section starts -->
+    <div class="header"><img src="/Images/background1.jpg" alt="background image"><span class="spanImage"></span>
+        <!-- logo -->
+        <div class="logo"><img src="/Images/ChromagenLogo.png" alt="Chromagen Logo"><a href="/index.html">The selected
+                works of <em>Chromagen</em></a></div>
+    </div>
+	 <!-- Load an icon library -->
+     <nav id="navigation">
 
         <ul class="topnav">
 
@@ -53,7 +52,7 @@
 
             <li><a href="/contact.html" class="contact"><i class="fa fa-envelope"></i> Contact Us</a>
 <ul class="contact-sub-menu">
-<li  class="selected"><a href="/invitation.html"><i class="fa fa-envelope-open-o" aria-hidden="true">Invitation</i></a></li>
+    <li class="selected"><a href="/invitation.html" class="invitation"><i class="fa fa-envelope-open-o" aria-hidden="true">Invitation</i></a></li>
 				<li><a href="/volunteer.html"><i class="fa fa-users" aria-hidden="true"></i>Volunteers</a>
                 </li>
                 <li><i class="fa fa-camera-retro" aria-hidden="true"></i><a href="/helpinggallery.html">Collection</a>
@@ -62,30 +61,33 @@
                 </li>
             </ul>
             </li>
-
+</ul>
         </nav>
 		<!-- /#navigation -->
-    </header>
-    <section id="pageForm">
+        <div class="form-container">
+        <section id="pageForm">
+        
         <form action="#">
-            <label for="participantName">Participant Name:</label>
-            <input type="text" name="participantNameInput" id="participantNameInput" placeholder="Enter your Participant Name"/>
+            <label>Participant Name: <input type="text" name="participantNameInput" id="participantNameInput" placeholder="Enter your Participant Name"></label>
+            
 
-            <label for="stationName">Station name:
+            <label>Station name: <input type="text" name="stationNameInput" id="stationNameInput" placeholder="Enter your Name">
             </label>
-            <input type="text" name="stationNameInput" id="stationNameInput" placeholder="Enter your Name" />
+            
 
             <input type="submit" value="Submit" onclick="replaceContent();return false;">
         </form>
+    
     </section>
+</div>
     <article id="placeholderContent">
 	Hello <span id="participantNamePlaceholder">participant Name</span>!
-        <br/>
-        <br/> You have been invited to volunteer for an event held on November 25th. Please respond to this email to sign up as a volunteer.
-        <br/>
-        <br/> Thanks!
-        <br/>
-        <br/>
+    <br>
+        <br> You have been invited to volunteer for an event held on November 25th. Please respond to this email to sign up as a volunteer.
+        <br>
+        <br> Thanks!
+        <br>
+        <br>
         <span id="hostNamePlaceholder">hostName</span>
     </article>
     <footer>This events site is for Chromagen Design.
