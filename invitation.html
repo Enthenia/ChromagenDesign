@@ -1,0 +1,95 @@
+<!--!Doctype html>
+
+<html lang="en-US">
+
+<!-- Comments-->
+
+<!--
+	Description: This is the invitation page.-->
+
+<head>
+    <title>Chromagen| Invitation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Site Metas -->
+
+    <meta charset="utf-8">
+
+    <meta name="author" content="Chromagen Design">
+
+    <meta name="keywords" content="art, design, traditional media">
+
+    <link rel="shortcut icon" type="image/jpg" href="/media/images/ChromagenLogo.PNG">
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script type="text/javascript" src="/js/invitation.js"defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html"><img src="media/Images/ChromagenLogo.PNG" alt="Chromagen Logo">ChromagenHelps<span class="dotcom">.org</span></a>
+        </div>
+        <!-- Navigation section -->
+    <nav id="navigation">
+
+        <ul class="topnav">
+
+            <li><a href="/index.html" class="home"><i class="fa fa-home"></i> Home</a></li>
+
+            <li><a href="/about.html" class="about"><i class="fa fa-user"></i> About</a></li>
+
+            <li><a href="/gallery.html" class="gallery"><i class="fa fa-picture-o"></i> Gallery</a></li>
+
+            <li><a href="/contact.html" class="contact"><i class="fa fa-envelope"></i> Contact Us</a>
+<ul class="contact-sub-menu">
+<li  class="selected"><a href="/invitation.html"><i class="fa fa-envelope-open-o" aria-hidden="true">Invitation</i></a></li>
+				<li><a href="/volunteer.html"><i class="fa fa-users" aria-hidden="true"></i>Volunteers</a>
+                </li>
+                <li><i class="fa fa-camera-retro" aria-hidden="true"></i><a href="/helpinggallery.html">Collection</a>
+                </li>
+                <li><a href="/registration.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Registration</a>
+                </li>
+            </ul>
+            </li>
+
+        </nav>
+		<!-- /#navigation -->
+    </header>
+    <section id="pageForm">
+        <form action="#">
+            <label for="participantName">Participant Name:</label>
+            <input type="text" name="participantNameInput" id="participantNameInput" placeholder="Enter your Participant Name"/>
+
+            <label for="stationName">Station name:
+            </label>
+            <input type="text" name="stationNameInput" id="stationNameInput" placeholder="Enter your Name" />
+
+            <input type="submit" value="Submit" onclick="replaceContent();return false;">
+        </form>
+    </section>
+    <article id="placeholderContent">
+	Hello <span id="participantNamePlaceholder">participant Name</span>!
+        <br/>
+        <br/> You have been invited to volunteer for an event held on November 25th. Please respond to this email to sign up as a volunteer.
+        <br/>
+        <br/> Thanks!
+        <br/>
+        <br/>
+        <span id="hostNamePlaceholder">hostName</span>
+    </article>
+    <footer>This events site is for Chromagen Design.
+    </footer>
+</body>
+
+</html>
