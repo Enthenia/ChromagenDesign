@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Chromagen Helps Gallery</title>
+    <link rel="stylesheet" type="text/css" href="Css/main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <!-- Navigation section -->
+    <nav id="navigation">
+
+        <ul class="topnav">
+
+            <li><a href="/index.html" class="home"><i class="fa fa-home"></i> Home</a></li>
+
+            <li><a href="/about.html" class="about"><i class="fa fa-user"></i> About</a></li>
+
+            <li><a href="/gallery.html" class="gallery"><i class="fa fa-picture-o"></i> Gallery</a></li>
+
+            <li><a href="/contact.html" class="contact"><i class="fa fa-envelope"></i> Contact Us</a>
+<ul class="contact-sub-menu">
+<li><i class="fa fa-envelope-open-o" aria-hidden="true"><a href="/invitation.html">Invitation</i></a></li>
+				<li><i class="fa fa-users" aria-hidden="true"><a href="/volunteer.html"></i>Volunteers</a>
+                </li>
+                <li class="selected"><i class="fa fa-camera-retro" aria-hidden="true"><a href="/helpinggallery.html"></i>Collection</a>
+                </li>
+                <li><i class="fa fa-sign-in" aria-hidden="true"><a href="/registration.html"></i>Registration</a>
+                </li>
+            </ul>
+            </li>
+
+        </nav>
+		 <!-- Banner Images Section -->
+        <section id="bannerImages">
+            <img id="banner" src="images/banner1.jpg" alt="Banner Image" />
+			</section>
+    </header>
+    <section id="gallery">
+
+<div class="helpinggallery">
+  <a target="_blank" href="images/firefighter.jpg">
+    <img src="images/firefighter.jpg" alt="firefighter" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="helpinggallery">
+  <a target="_blank" href="images/work.jpg">
+    <img src="images/work.jpg" alt="work" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="helpinggallery">
+  <a target="_blank" href="images/silhouette.jpg">
+    <img src="images/silhouette.jpg" alt="silhouette" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="helpinggallery">
+  <a target="_blank" href="images/event.jpg">
+    <img src="images/event.jpg" alt="event" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+    </section>
+    <footer>
+	This events site is for Chromagen Design.
+    <p> &copy; Copyright 2024 Chromagen Design</p>
+	</footer>
+	 <!-- JavaScript for Banner Image Cycling -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const bannerImages = ["images/banner1.jpg", "images/banner2.jpg", "images/banner3.jpg"];
+            let currentImageIndex = 0;
+
+            // Preload banner images
+            bannerImages.forEach((src) => {
+                const img = new Image();
+                img.src = src;
+            });
+
+            // Function to cycle through images
+            const cycleBanner = () => {
+                currentImageIndex = (currentImageIndex + 1) % bannerImages.length;
+                document.getElementById("banner").src = bannerImages[currentImageIndex];
+            };
+
+            // Cycle every 3 seconds
+            setInterval(cycleBanner, 3000);
+        });
+    </script>
+</body>
+
+</html>
