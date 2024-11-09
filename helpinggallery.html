@@ -2,10 +2,6 @@
 
 <html lang="en-US">
 
-
-
-
-
 <head>
 
 
@@ -36,11 +32,11 @@
 
 	<meta name="keywords" content="art, design, traditional media">
 
-	<title>Chromagen Helps | Gallery</title>
+	<title>Chromagen Helps | Collection</title>
 
 	<link rel="shortcut icon" type="image/jpg" href="media/Images/ChromagenLogo.png">
 
-<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="Css/style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -68,65 +64,62 @@
 
 			</section>
 
-<!-- Navigation section -->
+<     <!-- Navigation section -->
 
-			<nav id="navigation">
+<nav id="navigation">
 
-        <ul class="topnav">
-
-
-
-            <li><a href="/index.html" class="home"><i class="fa fa-home"></i> Home</a></li>
+    <ul class="topnav">
 
 
 
-            <li><a href="/about.html" class="about"><i class="fa fa-user"></i> About</a></li>
+        <li><a href="/index.html" class="home"><i class="fa fa-home"></i> Home</a></li>
 
 
 
-            <li><a href="/gallery.html" class="gallery"><i class="fa fa-picture-o"></i> Gallery</a></li>
+        <li><a href="/about.html" class="about"><i class="fa fa-user"></i> About</a></li>
 
 
 
-            <li><a href="/contact.html" class="contact"><i class="fa fa-envelope"></i> Contact Us</a>
+        <li><a href="/gallery.html" class="gallery"><i class="fa fa-picture-o"></i> Gallery</a></li>
+
+
+
+        <li><a href="/contact.html" class="contact"><i class="fa fa-envelope"></i> Contact Us</a>
 
 <ul class="contact-sub-menu">
 
 <li><a href="/invitation.html" class="invitation"><i class="fa fa-envelope-open-o" aria-hidden="true">Invitation</i></a></li>
 
-				<li><a href="/volunteer.html" class="volunteer"><i class="fa fa-users" aria-hidden="true"></i>Volunteers</a>
-
-                </li>
-
-                <li class="selected'><a href="/helpinggallery.html" class="helpinggallery"><i class="fa fa-camera-retro" aria-hidden="true"></i><Collection</a>
-
-                </li>
-
-                <li><a href="/registration.html" class="registration"><i class="fa fa-sign-in" aria-hidden="true"></i>Registration</a>
-
-                </li>
-
-            </ul>
+            <li><a href="/volunteer.html" class="volunteer"><i class="fa fa-users" aria-hidden="true"></i>Volunteers</a>
 
             </li>
 
-			</ul>
+            <li class="selected"><a href="/helpinggallery.html" class="helpinggallery"><i class="fa fa-camera-retro" aria-hidden="true"></i>Collection</a>
 
-        </nav>
+            </li>
 
-		<!-- /#navigation -->
+            <li><a href="/registration.html" class="registration"><i class="fa fa-sign-in" aria-hidden="true"></i>Registration</a>
+
+            </li>
+
+        </ul>
+
+        </li>
+
+        </ul>
+
+    </nav>
 
     </header>
 
     <section id="gallery">
 
 
-
 <div class="helpinggallery">
 
-  <a target="_blank" href="/media/images/firefighter.jpg">
+  <a target="_blank" href="media/images/firefighter.jpg">
 
-    <img src="/media/images/firefighter.jpg" alt="firefighter" width="300" height="200"
+    <img src="media/images/firefighter.jpg" alt="firefighter" width="300" height="200"
 
 	onclick="openimage('media/images/firefighter.jpg')">
 
@@ -140,9 +133,9 @@
 
 <div class="helpinggallery">
 
-  <a target="_blank" href="/media/images/work.jpg">
+  <a target="_blank" href="media/images/work.jpg">
 
-    <img src="/media/images/work.jpg" alt="work" width="300" height="200"
+    <img src="media/images/work.jpg" alt="work" width="300" height="200"
 
 	onclick="openimage('media/images/work.jpg')">
 
@@ -156,9 +149,9 @@
 
 <div class="helpinggallery">
 
-  <a target="_blank" href="/media/images/silhouette.jpg">
+  <a target="_blank" href="media/images/silhouette.jpg">
 
-    <img src="/media/images/silhouette.jpg" alt="silhouette" width="300" height="200"
+    <img src="media/images/silhouette.jpg" alt="silhouette" width="300" height="200"
 
 	onclick="openimage('media/images/silhouette.jpg')">
 
@@ -172,9 +165,9 @@
 
 <div class="helpinggallery">
 
-  <a target="_blank" href="/media/images/event.jpg">
+  <a target="_blank" href="media/images/event.jpg">
 
-    <img src="/media/images/event.jpg" alt="event" width="300" height="200"
+    <img src="media/images/event.jpg" alt="event" width="300" height="200"
 
 	onclick="openimage('media/images/event.jpg')">
 
@@ -190,7 +183,7 @@
 
                 <span class="close">&times;</span>
 
-                <img class="popup-content" id="popup-img" src="/media/images/placeholder.jpg" alt="Expanded Image">
+                <img class="popup-content" id="popup-img" src="media/images/placeholder.jpg" alt="Expanded Image">
 
             </div>
 
@@ -258,7 +251,7 @@
 
         document.addEventListener("DOMContentLoaded", function () {
 
-            const bannerImages = ["/media/images/banner1.jpg", "/media/images/banner2.jpg", "/media/images/banner3.jpg"];
+            const bannerImages = ["media/images/banner1.jpg", "media/images/banner2.jpg", "/media/images/banner3.jpg"];
 
             let currentImageIndex = 0;
 
@@ -341,7 +334,5 @@
     </script>
 
 </body>
-
-
 
 </html>
