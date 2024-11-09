@@ -1,68 +1,287 @@
-<!DOCTYPE html>
+<!Doctype html>
+
+
+
 <html lang="en-US">
 
+
+
+<!-- Comments-->
+
+
+
+<!--
+
+	Description: This is the registration.-->
+
+
+
 <head>
-    <title>Invitation Page</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <title>Chromagen Helps| Registration</title>
+
+
+
+    <!-- Mobile Metas -->
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Site Metas -->
+
+
+
+    <meta charset="utf-8">
+
+
+
+    <meta name="author" content="Chromagen Design">
+
+
+
+    <meta name="keywords" content="art, design, traditional media">
+
+
+
+    <link rel="shortcut icon" type="image/jpg" href="media/images/ChromagenLogo.PNG">
+
+    <link rel="stylesheet" href="Css/contact.css">
+
+    <link rel="stylesheet" href="Css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<script src="js/validate.js" defer></script>
+
 </head>
 
+
+
 <body>
-    <header>
-        <div class="top">
-            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+
+<header>
+
+ <span id="background"></span>
+
+    <div id="page">
+
+        <div class="sidebar"><img src="media/Images/background1.jpg" alt="background image"><span class="spanImage"></span>
+
         </div>
-        <nav>
-            <ul class="topnav">
-                <li><a href="index.html">Home</a>
+
+        <div class="top">
+
+            <a class="logo" href="index.html"><img src="media/Images/ChromagenLogo.PNG" alt="Chromagen Logo">ChromagenHelps<span class="dotcom">.org</span></a></div>
+
+        </div>
+
+		<!-- Navigation section -->
+
+    <nav id="navigation">
+
+
+
+        <ul class="topnav">
+
+
+
+            <li><a href="/index.html" class="home"><i class="fa fa-home"></i> Home</a></li>
+
+
+
+            <li><a href="/about.html" class="about"><i class="fa fa-user"></i> About</a></li>
+
+
+
+            <li><a href="/gallery.html" class="gallery"><i class="fa fa-picture-o"></i> Gallery</a></li>
+
+
+
+            <li><a href="/contact.html" class="contact"><i class="fa fa-envelope"></i> Contact Us</a>
+
+<ul class="contact-sub-menu">
+
+<li><a href="/invitation.html"><i class="fa fa-envelope-open-o" aria-hidden="true">Invitation</i></a></li>
+
+				<li><a href="/volunteer.html"><i class="fa fa-users" aria-hidden="true"></i>Volunteers</a>
+
                 </li>
-                <li><a href="invitation.html">Invitation</a>
+
+                <li><i class="fa fa-camera-retro" aria-hidden="true"></i><a href="/helpinggallery.html">Collection</a>
+
                 </li>
-				<li><a href="volunteer.html">Volunteers</a>
+
+                <li class="selected'><a href="/registration.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Registration</a>
+
                 </li>
-                <li><a href="gallery.html">Gallery</a>
-                </li>
-                <li><a href="registration.html" class="active">Registration</a>
-                </li>
+
             </ul>
 
+            </li>
+
+			</ul>
+
         </nav>
-    </header>
-    <section id="pageForm">
-        <form action="#">
-            <label for="userName">Username:</label>
-            <input type="text" name="userName" placeholder="Enter your Username" />
 
-            <label for="Password">Password:
-            </label>
-            <input type="password" name="password" placeholder="Enter your Password" />
+		<!-- /#navigation -->
 
-            <label for="passwordVerify">Verify your Password:
-            </label>
-            <input type="password" name="passwordVerify" placeholder="Enter in your Password again" />
+     <!-- Form Section -->
 
-            <label for="firstName">First Name:
-            </label>
-            <input type="text" name="firstName" placeholder="Enter your First Name" />
+        <section>
 
-            <label for="hostName">Last Name:
-            </label>
-            <input type="text" name="lastName" placeholder="Enter your Last Name" />
-            <label for="email">Email:
-            </label>
-            <input type="text" name="email" placeholder="Enter your Email Address" />
-			<label for="phoneNumber">Phone Number
-            </label>
-            <input type="text" name="lastName" placeholder="Enter your Phone Number" />
-			<label for="signUpNewsletter">Sign up for newsletter:
-            </label>
-			  <input type="radio" name="signUpNewsletter" value="Yes" checked> Yes 
-				<input type="radio" name="signUpNewsletter" value="No"> No
-            <input type="submit" value="Next step">
-        </form>
-    </section>
+            <!-- Registration Form -->
 
-    <footer>This events site is for IT3515 tasks.
+            <form id="registrationForm" onsubmit="return saveDataToCookies();">
+
+                <!-- First Name Input Field -->
+
+                <div class="form-group">
+
+                    <label for="name">First Name*:</label>
+
+                    <input type="text" id="name" name="name" required>
+
+                    <span id="nameError" class="warning"></span> <!-- Error message display -->
+
+                </div>
+
+
+
+                <!-- Last Name Input Field -->
+
+                <div class="form-group">
+
+                    <label for="surname">Last Name*:</label>
+
+                    <input type="text" id="surname" name="surname" required>
+
+                    <span id="surnameError" class="warning"></span>
+
+                </div>
+
+
+
+                <!-- Email Input Field -->
+
+                <div class="form-group">
+
+                    <label for="email">Email*:</label>
+
+                    <input type="email" id="email" name="email" required>
+
+                    <span id="emailError" class="warning"></span>
+
+                </div>
+
+
+
+                <!-- Phone Input Field (Optional) -->
+
+                <div class="form-group">
+
+                    <label for="phone">Phone:</label>
+
+                    <input type="tel" id="phone" name="phone" pattern="^\d{10}$" placeholder="10-digit phone number">
+
+                    <span id="phoneError" class="warning"></span>
+
+                </div>
+
+
+
+                <!-- Password Input Field -->
+
+                <div class="form-group">
+
+                    <label for="password">Password*:</label>
+
+                    <input type="password" id="password" name="password" required>
+
+                    <span id="passwordError" class="warning"></span>
+
+                </div>
+
+
+
+                <!-- Submit Button -->
+
+                <div class="button-group">
+
+                    <button type="submit">Submit</button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+
+     <footer>This events site is for Chromagen Design.
+
+	<p> &copy; Copyright 2024 Chromagen Design</p>
+
     </footer>
+
+	 <!-- Inline JavaScript to handle cookie storage and form submission -->
+
+    <script>
+
+        /**
+
+         * Saves form data into cookies and redirects to comfirm2.html
+
+         * @returns {boolean} False to prevent the default form submission.
+
+         */
+
+        function saveDataToCookies() {
+
+            // Validate the form using verifyall2.js; if invalid, return false to stop submission
+
+            if (!validateForm()) return false;
+
+
+
+            // Store each form field in a cookie
+
+            document.cookie = `name=${encodeURIComponent(document.getElementById('name').value)}; path=/`;
+
+            document.cookie = `surname=${encodeURIComponent(document.getElementById('surname').value)}; path=/`;
+
+            document.cookie = `email=${encodeURIComponent(document.getElementById('email').value)}; path=/`;
+
+            document.cookie = `phone=${encodeURIComponent(document.getElementById('phone').value)}; path=/`;
+
+            document.cookie = `password=${encodeURIComponent(document.getElementById('password').value)}; path=/`;
+
+
+
+            // Redirect to comfirm2.html to display stored information
+
+            window.location.href = "validate.html";
+
+            return false; // Prevents the default form submission
+
+        }
+
+    </script>
+
 </body>
+
+
 
 </html>

@@ -1,163 +1,347 @@
-<!Doctype html>
+<!DOCTYPE html>
+
 <html lang="en-US">
 
-<!-- Comments-->
 
-
-
-<!--
-
-	Description: This is the collection.-->
 
 
 
 <head>
 
-  <title>Chromagen Helps Gallery</title>
-    <link rel="stylesheet" type="text/css" href="Css/main.css" />
-	<!--Mobile Metas --->
 
-	
 
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
 
-    <!-- Site Metas -->
+	<!-- Mobile Metas -->
 
 
 
-    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
 
-    <meta name="author" content="Chromagen Design">
+	<!-- Site Metas -->
 
 
 
-    <meta name="keywords" content="art, design, traditional media">
+	<meta charset="utf-8">
 
 
 
-    <link rel="shortcut icon" type="image/jpg" href="/media/images/ChromagenLogo.PNG">
+	<meta name="author" content="Chromagen Design">
 
-    <link rel="stylesheet" href="/Css/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+	<meta name="keywords" content="art, design, traditional media">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<title>Chromagen Helps | Gallery</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+	<link rel="shortcut icon" type="image/jpg" href="media/Images/ChromagenLogo.png">
 
-        rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
 </head>
 
 <body>
-    <header>
-	    <div id="page">
 
-        <div class="sidebar"><img src="media/images/background1.jpg" alt="background image"><span class="spanImage"></span>
+			 <!-- header section starts -->
 
-        </div>
-        <div class="top">
-            <a class="logo" href="index.html"><img src="media/images/ChromagenLogo.PNG" alt="Chromagen Logo">ChromagenHelps<span class="dotcom">.org</span></a></div>
+  <div class="header"><img src="media/images/background1.jpg" alt="background image"><span class="spanImage"></span>
 
-        </div>
+<!-- logo -->
 
-        <!-- Navigation section -->
-    <nav id="navigation">
+			<div class="logo"><img src="media/images/ChromagenLogo.PNG" alt="Chromagen Logo"><a href="/index.html">Chromagen Helps</a></div></div>
+
+      <!-- Banner Images Section -->
+
+        <section id="bannerImages">
+
+            <img id="banner" src="/media/images/banner1.jpg" alt="Banner Image">
+
+			</section>
+
+<!-- Navigation section -->
+
+			<nav id="navigation">
 
         <ul class="topnav">
 
+
+
             <li><a href="/index.html" class="home"><i class="fa fa-home"></i> Home</a></li>
+
+
 
             <li><a href="/about.html" class="about"><i class="fa fa-user"></i> About</a></li>
 
+
+
             <li><a href="/gallery.html" class="gallery"><i class="fa fa-picture-o"></i> Gallery</a></li>
 
+
+
             <li><a href="/contact.html" class="contact"><i class="fa fa-envelope"></i> Contact Us</a>
+
 <ul class="contact-sub-menu">
-<li><a href="/invitation.html"><i class="fa fa-envelope-open-o" aria-hidden="true">Invitation</i></a></li>
-				<li><a href="/volunteer.html"><i class="fa fa-users" aria-hidden="true"></i>Volunteers</a>
+
+<li><a href="/invitation.html" class="invitation"><i class="fa fa-envelope-open-o" aria-hidden="true">Invitation</i></a></li>
+
+				<li><a href="/volunteer.html" class="volunteer"><i class="fa fa-users" aria-hidden="true"></i>Volunteers</a>
+
                 </li>
-                <li class="selected"><a href="/helpinggallery.html"><i class="fa fa-camera-retro" aria-hidden="true"></i>Collection</a>
+
+                <li class="selected'><a href="/helpinggallery.html" class="helpinggallery"><i class="fa fa-camera-retro" aria-hidden="true"></i><Collection</a>
+
                 </li>
-                <li><a href="/registration.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Registration</a>
+
+                <li><a href="/registration.html" class="registration"><i class="fa fa-sign-in" aria-hidden="true"></i>Registration</a>
+
                 </li>
+
             </ul>
+
             </li>
 
+			</ul>
+
         </nav>
-    </div>
-		 <!-- Banner Images Section -->
-        <section id="bannerImages">
-            <img id="banner" src="/media/images/banner1.jpg" alt="Banner Image" />
-			</section>
+
+		<!-- /#navigation -->
+
     </header>
+
     <section id="gallery">
 
-<div class="helpinggallery">
-  <a target="_blank" href="media/images/firefighter.jpg">
-    <img src="/media/images/firefighter.jpg" alt="firefighter" width="300" height="200">
-  </a>
-  <div class="desc">Firefighters</div>
-</div>
+
 
 <div class="helpinggallery">
-  <a target="_blank" href="media/images/work.jpg">
-    <img src="/media/images/work.jpg" alt="work" width="300" height="200">
+
+  <a target="_blank" href="/media/images/firefighter.jpg">
+
+    <img src="/media/images/firefighter.jpg" alt="firefighter" width="300" height="200"
+
+	onclick="openimage('media/images/firefighter.jpg')">
+
   </a>
-  <div class="desc">Work</div>
+
+  <div class="desc">First Responders</div>
+
 </div>
 
+
+
 <div class="helpinggallery">
+
+  <a target="_blank" href="/media/images/work.jpg">
+
+    <img src="/media/images/work.jpg" alt="work" width="300" height="200"
+
+	onclick="openimage('media/images/work.jpg')">
+
+  </a>
+
+  <div class="desc">Work Environment</div>
+
+</div>
+
+
+
+<div class="helpinggallery">
+
   <a target="_blank" href="/media/images/silhouette.jpg">
-    <img src="/media/images/silhouette.jpg" alt="silhouette" width="300" height="200">
+
+    <img src="/media/images/silhouette.jpg" alt="silhouette" width="300" height="200"
+
+	onclick="openimage('media/images/silhouette.jpg')">
+
   </a>
-  <div class="desc">A silhouette</div>
+
+  <div class="desc">A group of people</div>
+
 </div>
 
+
+
 <div class="helpinggallery">
-  <a target="_blank" href="images/event.jpg">
-    <img src="media/images/event.jpg" alt="event" width="300" height="200">
+
+  <a target="_blank" href="/media/images/event.jpg">
+
+    <img src="/media/images/event.jpg" alt="event" width="300" height="200"
+
+	onclick="openimage('media/images/event.jpg')">
+
   </a>
+
   <div class="desc">An event</div>
+
 </div>
+
+<!-- Pop-up Window for Larger Images -->
+
+            <div id="popup" class="popup" onclick="closeImage()">
+
+                <span class="close">&times;</span>
+
+                <img class="popup-content" id="popup-img" src="/media/images/placeholder.jpg" alt="Expanded Image">
+
+            </div>
+
+
 
     </section>
-    <footer>
-	This events site is for Chromagen Design.
-    <p> &copy; Copyright 2024 Chromagen Design</p>
+
+    <div class="astrodivider">
+
+
+
+  <div class="astrodividermask"></div><span><i>&#10038;</i></span>
+
+
+
+</div>
+
+
+
+<div class="astrodivider purple">
+
+
+
+  <div class="astrodividermask"></div><span><i>&#10038;</i></span>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="astrodivider neonpurple">
+
+
+
+  <div class="astrodividermask"></div><span><i>&#10038;</i></span>
+
+
+
+</div>	
+
+<footer>
+
+			<p> &copy; Copyright 2024 Chromagen Design</p>
+
+
+
+			<a href="https://urldefense.com/v3/__http://www.freepik.com__;!!A2VBZwsE!0PZpbl833ipITVn4uTpodB1Ih3XUsaXetYZh86CujBsJKlA6u27UZ6olhgn9r6nxW8adJWPpwhZ7ZuRNLUs$"><h6>Background designed by Freepik</h6></a>
+
+	
+
 	</footer>
+
+	<!-- /.footer -->
+
+
+
 	 <!-- JavaScript for Banner Image Cycling -->
+
     <script>
+
         document.addEventListener("DOMContentLoaded", function () {
+
             const bannerImages = ["/media/images/banner1.jpg", "/media/images/banner2.jpg", "/media/images/banner3.jpg"];
+
             let currentImageIndex = 0;
 
+
+
             // Preload banner images
+
             bannerImages.forEach((src) => {
+
                 const img = new Image();
+
                 img.src = src;
+
             });
 
+
+
             // Function to cycle through images
+
             const cycleBanner = () => {
+
                 currentImageIndex = (currentImageIndex + 1) % bannerImages.length;
+
                 document.getElementById("banner").src = bannerImages[currentImageIndex];
+
             };
 
+
+
             // Cycle every 3 seconds
+
             setInterval(cycleBanner, 3000);
+
         });
+
     </script>
+
+	
+
+	<!-- JavaScript for Image Pop-up Functionality -->
+
+    <script>
+
+        /**
+
+         * Opens the image in a pop-up.
+
+         * @param {string} src - The source path of the image to display.
+
+         */
+
+        function openImage(src) {
+
+            const popup = document.getElementById('popup');
+
+            const popupImg = document.getElementById('popup-img');
+
+            popupImg.src = src; // Set the image source dynamically
+
+            popup.style.display = 'flex'; // Show the pop-up
+
+        }
+
+
+
+        /**
+
+         * Closes the pop-up window when clicked.
+
+         */
+
+        function closeImage() {
+
+            const popup = document.getElementById('popup');
+
+            popup.style.display = 'none'; // Hide the pop-up
+
+        }
+
+    </script>
+
 </body>
+
+
 
 </html>
