@@ -55,6 +55,7 @@ padding-inline-end: 1em;
   color: transparent;
 
   background-clip: text;
+  background-clip: text;
 
   -webkit-background-clip: text;
   text-align: start;
@@ -118,11 +119,11 @@ writing-mode: horizontal-tb;
 }
 .form-container {
   text-align: center;
-  padding-top: 25px;
+  padding-block-start: 25px;
 }
 .form {
   display: none;
-  width: 100%;
+  inline-size: 100%;
 }
 .footer {
   grid-area: footer;
@@ -205,7 +206,7 @@ writing-mode: horizontal-tb;
   background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(84, 9, 121, 1) 44%, rgba(0, 212, 255, 1) 100%);
   background-repeat: no-repeat;
   position: relative;
-  top: auto;
+  inset-block-start: auto;
   flex-direction: column;
   flex-wrap: stretch;
   inline-size: 100%;
@@ -266,7 +267,7 @@ nav ul li ul li a:hover {
   grid-area: rightside;
   block-size: 60vh;
   position: relative;
-  top: auto;
+  inset-block-start: auto;
   flex-direction: column;
   flex-wrap: stretch;
   inline-size: 100%;
@@ -303,10 +304,8 @@ nav ul li ul li a:hover {
 
 
   color: transparent;
-
-  background-clip: text;
-
   -webkit-background-clip: text;
+  
   text-align: start;
 
   margin: auto;

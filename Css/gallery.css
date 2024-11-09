@@ -205,10 +205,10 @@
   grid-area: sidebar;
   background-image: linear-gradient(90deg, rgb(28, 26, 73) 0%, rgba(84, 9, 121, 1) 44%, rgba(0, 212, 255, 1) 100%);
   background-repeat: no-repeat;
-  height: 300px;
-  width: 100%;
+  block-size: 300px;
+  inline-size: 100%;
   position: relative;
-  top: auto;
+  inset-block-start: auto;
   flex-direction: column;
   flex-wrap: wrap;
   inline-size: 100%;
@@ -637,7 +637,7 @@ grid-area: main;
       grid-row: span 9
     }
 
-    @media screen and (max-width:1024px) {
+    @media screen and (max-inline-size:1024px) {
 
       .image-grid {
 

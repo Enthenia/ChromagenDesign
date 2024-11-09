@@ -219,7 +219,7 @@ li a {
 .padded {
   grid-area: main;
   display: flex;
-  width: 50%;
+  inline-size: 50%;
   background-image: linear-gradient(to right, rgb(63, 32, 32), rgb(187, 168, 168));
   background-image: url("Images/background1.jpg");;
 }
@@ -247,7 +247,7 @@ ul {
 .padded2,
 ul {
   grid-area: main;
-  margin-right: 10px;
+  margin-inline-end: 10px;
   background-image: linear-gradient(to right, rgb(63, 32, 32), rgb(187, 168, 168));
   background-image: url("Images/background1.jpg");
   margin: 10px;
