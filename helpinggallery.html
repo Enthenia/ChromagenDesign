@@ -47,70 +47,47 @@
 </head>
 
 <body>
-
-			 <!-- header section starts -->
-
-  <div class="header"><img src="media/images/background1.jpg" alt="background image"><span class="spanImage"></span>
+	<!-- header section starts -->
+<div class="sidebar"><img src="/media/images/background1.jpg" alt="background image"><span class="spanImage"></span></div>
 
 <!-- logo -->
 
-			<div class="logo"><img src="media/images/ChromagenLogo.PNG" alt="Chromagen Logo"><a href="/index.html">Chromagen Helps</a></div></div>
+<div class="logo"><img src="media/images/ChromagenLogo.PNG" alt="Chromagen Logo"><a href="/index.html">Chromagen Helps</a></div></div>
 
       <!-- Banner Images Section -->
 
         <section id="bannerImages">
 
-            <img id="banner" src="/media/images/banner1.jpg" alt="Banner Image">
+            <img id="banner" src="media/images/banner1.jpg" alt="Banner Image">
 
 			</section>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="footer"></div>
+    <div class="sidebar">
+      <nav id="navigation">
 
-<     <!-- Navigation section -->
+        <ul class="topnav">
+            <li><a href="/index.html" class="home"><i class="fa fa-home"></i> Home</a></li>
 
-<nav id="navigation">
+            <li><a href="/about.html" class="about"><i class="fa fa-user"></i> About</a></li>
 
-    <ul class="topnav">
+            <li><a href="/gallery.html" class="gallery"><i class="fa fa-picture-o"></i> Gallery</a></li>
 
-
-
-        <li><a href="/index.html" class="home"><i class="fa fa-home"></i> Home</a></li>
-
-
-
-        <li><a href="/about.html" class="about"><i class="fa fa-user"></i> About</a></li>
-
-
-
-        <li><a href="/gallery.html" class="gallery"><i class="fa fa-picture-o"></i> Gallery</a></li>
-
-
-
-        <li><a href="/contact.html" class="contact"><i class="fa fa-envelope"></i> Contact Us</a>
-
-<ul class="contact-sub-menu">
-
-<li><a href="/invitation.html" class="invitation"><i class="fa fa-envelope-open-o" aria-hidden="true">Invitation</i></a></li>
-
-            <li><a href="/volunteer.html" class="volunteer"><i class="fa fa-users" aria-hidden="true"></i>Volunteers</a>
-
-            </li>
-
-            <li class="selected"><a href="/helpinggallery.html" class="helpinggallery"><i class="fa fa-camera-retro" aria-hidden="true"></i>Collection</a>
-
-            </li>
-
-            <li><a href="/registration.html" class="registration"><i class="fa fa-sign-in" aria-hidden="true"></i>Registration</a>
-
-            </li>
-
-        </ul>
-
-        </li>
-
-        </ul>
-
-    </nav>
-
-    </header>
+            <li><a href="/contact.html" class="contact"><i class="fa fa-envelope"></i> Contact Us</a>
+              <ul class="contact-sub-menu">
+                  <li><a href="/invitation.html" class="invitation"><i class="fa fa-envelope-open-o" aria-hidden="true">Invitation</i></a></li>
+                      <li><a href="/volunteer.html"><i class="fa fa-users" aria-hidden="true"></i>Volunteers</a>
+                              </li>
+                              <li class="selected"><i class="fa fa-camera-retro" aria-hidden="true"></i><a href="/helpinggallery.html">Collection</a>
+                              </li>
+                              <li><a href="/registration.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Registration</a>
+                              </li>
+                          </ul>
+                          </li>
+              </ul>
+                      </nav>
+</div>   
+</header>
 
     <section id="gallery">
 
@@ -251,7 +228,7 @@
 
         document.addEventListener("DOMContentLoaded", function () {
 
-            const bannerImages = ["media/images/banner1.jpg", "media/images/banner2.jpg", "/media/images/banner3.jpg"];
+            const bannerImages = ["media/images/banner1.jpg", "media/images/banner2.jpg", "media/images/banner3.jpg"];
 
             let currentImageIndex = 0;
 
