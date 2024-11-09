@@ -49,6 +49,47 @@
 
     <footer>This events site is for IT3515 tasks.
     </footer>
+	<script>
+
+        /**
+
+         * Handle form submission by redirecting to the confirmation page
+
+         * with the form data passed in the query string.
+
+         */
+
+        function handleSubmit(event) {
+
+            event.preventDefault(); // Prevent the form from reloading the page
+
+
+
+            // Collect form data
+
+            const firstName = document.getElementById('first_name').value.trim();
+
+            const lastName = document.getElementById('last_name').value.trim();
+
+            const email = document.getElementById('email').value.trim();
+
+            const phone = document.getElementById('phone').value.trim();
+
+
+
+            // Construct the query string for the confirmation page
+
+            const queryString = `?first_name=${encodeURIComponent(firstName)}&last_name=${encodeURIComponent(lastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}`;
+
+
+
+            // Redirect to the confirmation page with the query string
+
+            window.location.href = `comfirm.html${queryString}`;
+
+        }
+
+    </script>
 </body>
 
 </html>
