@@ -43,7 +43,6 @@
 
 
     <meta name="keywords" content="art, design, traditional media">
-<title>Chromagen Helps | Registration</title>
 
 	<link rel="shortcut icon" type="image/jpg" href="media/images/ChromagenLogo.PNG">
 
@@ -59,46 +58,34 @@
 </head>
 
 <body>
-
-<header>
-
-   <div class="sidebar"><img src="media/images/background1.jpg" alt="background image"><span class="spanImage"></span></div>
-    <div id="page">
-
-        <div class="sidebar"><img src="media/images/background1.jpg" alt="background image"><span class="spanImage"></span>
-
-        </div>
-
-        <div class="top">
-
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="footer"></div>
     <div class="sidebar">
-      <nav id="navigation">
-
+      <!-- Load an icon library -->
+    <nav id="navigation">
         <ul class="topnav">
+
             <li><a href="/index.html" class="home"><i class="fa fa-home"></i> Home</a></li>
 
             <li><a href="/about.html" class="about"><i class="fa fa-user"></i> About</a></li>
 
             <li><a href="/gallery.html" class="gallery"><i class="fa fa-picture-o"></i> Gallery</a></li>
 
-            <li><a href="/contact.html" class="contact"><i class="fa fa-envelope"></i> Contact Us</a>
-              <ul class="contact-sub-menu">
-                  <li><a href="/invitation.html" class="invitation"><i class="fa fa-envelope-open-o" aria-hidden="true">Invitation</i></a></li>
-                      <li><a href="/volunteer.html"><i class="fa fa-users" aria-hidden="true"></i>Volunteers</a>
-                              </li>
-                              <li><i class="fa fa-camera-retro" aria-hidden="true"></i><a href="/helpinggallery.html">Collection</a>
-                              </li>
-                              <li class="selected"><a href="/registration.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Registration</a>
-                              </li>
-                          </ul>
-                          </li>
-              </ul>
-                      </nav>
-</div>
-
-		<!-- /#navigation -->
+            <li  class><a href="/contact.html" class="contact"><i class="fa fa-envelope"></i> Contact Us</a>
+<ul class="contact-sub-menu">
+<li><a href="/invitation.html"><i class="fa fa-envelope-open-o" aria-hidden="true">Invitation</i></a></li>
+				<li><a href="/volunteer.html"><i class="fa fa-users" aria-hidden="true"></i>Volunteers</a>
+                </li>
+                <li><i class="fa fa-camera-retro" aria-hidden="true"></i><a href="/helpinggallery.html">Collection</a>
+                </li>
+                <li class="selected"><a href="/registration.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Registration</a>
+                </li>
+            </ul>
+            </li>
+</ul>
+        </nav>
+        </div>
+    <!-- /#navigation -->
 
      <!-- Form Section -->
 
@@ -238,7 +225,7 @@
 
         /**
 
-         * Saves form data into cookies and redirects to comfirm2.html
+         * Saves form data into cookies and redirects to validate.html
 
          * @returns {boolean} False to prevent the default form submission.
 
@@ -266,7 +253,7 @@
 
 
 
-            // Redirect to comfirm2.html to display stored information
+            // Redirect to validate.html to display stored information
 
             window.location.href = "validate.html";
 
